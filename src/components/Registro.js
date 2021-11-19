@@ -6,7 +6,7 @@ const Registro = () => {
 const [registro, setRegistro] = useState({
     nombre : "",
     precio : "",
-    imgane : ""
+    imagen : ""
 })
 
 
@@ -32,6 +32,7 @@ const crear = async()=>{
             'Content-Type': 'application/json; charset=utf-8'
         }
     })
+    console.log(registro);
 }
 return (
 <div>
