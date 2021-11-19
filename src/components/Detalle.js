@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ContainerCard, ContainerImg, ContainerNombre, ContainerPrecio, ButtonAdd, ContainerProducts } from '../styles/Detalle.styles';
 import { ProductStyle } from '../styles/Main.styles';
@@ -8,18 +8,38 @@ function Detalle({producto, productos }) {
     const {id} = useParams()
     const datos = productos.filter(el => el.nombre !== id)
     
-    // console.log(datos);
 
-   
+    const [total, setTotal] = useState(0);
 
-const handleData = (data) => {
+
+
+
+
+
+
+
+    const handleData = (data) => {
+
+
+    
     localStorage.setItem(data.nombre, JSON.stringify(data) )
+   const  producto = localStorage.getItem(data.nombre)
+
+    const {precio} = JSON.parse(producto)
+    setTotal(total + precio)
+    getStorage()
+    
+
+    // console.log(precio);
 
   }
-  // onClick={() => handleData(dataP)}
-  // onClick={() => handleData(dataO)}
+  
+  const getStorage = () =>{
+
+    localStorage.setItem("total", total.toFixed(2))
 
 
+  }
 
     return (
         <div>
