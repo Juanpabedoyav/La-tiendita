@@ -1,11 +1,17 @@
-
-
+import Hero from '../components/Hero';
+import Main from '../components/Main';
+import {ContenedorStyle} from '../styles/Utilidades.styles';
+import { AppRouter } from '../router/AppRouter';
 
 function App() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <>
+      <ContenedorStyle>
+        <AppRouter />
+        <Hero />
+        <Main />
+      </ContenedorStyle>
+    </>
   );
 }
 
