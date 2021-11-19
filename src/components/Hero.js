@@ -1,11 +1,11 @@
 import React from 'react'
 
-function NavBar() {
+function Hero() {
     return (
       <>
-        <h1>NavBar</h1>
+        <h1>Hero</h1>
       </>
     );
 }
 
-export default NavBar
+export default Hero
