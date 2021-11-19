@@ -12,4 +12,5 @@ export const HeroStyle = styled.div`
 `;
 export const HeroTitulo = styled.h2`
     text-align: center;
+    color: #fffe;
 `

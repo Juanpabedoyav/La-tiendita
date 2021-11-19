@@ -5,7 +5,7 @@ function Hero() {
     return (
       <>
         <HeroStyle>
-          <HeroTitulo>Hola soy un titulo</HeroTitulo>
+          <HeroTitulo>Adquiere todos tus productos favoritos a el mejor precio </HeroTitulo>
         </HeroStyle>
       </>
     );

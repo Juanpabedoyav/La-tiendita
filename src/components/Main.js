@@ -21,6 +21,9 @@ function Main({oferta, popular}) {
     getData()
   }, [])
 
+
+  
+
     return (
       <>
         <h1 className="producto-seccion">Ofertas</h1>
@@ -31,7 +34,10 @@ function Main({oferta, popular}) {
                 <img src={imagen} alt={nombre} />
                 <p>{precio}</p>
                 <p>{nombre}</p>
-                <Link className="boton-agregar" to={`/producto/${nombre}`}>Agregar</Link>
+                {/* <Link  className="boton-agregar" to="/"  >Agregar</Link>  */}
+
+
+                <Link className="boton-agregar" to={`/producto/${nombre}`}>Detalle</Link>
               </div>
             );
           })}
@@ -44,7 +50,8 @@ function Main({oferta, popular}) {
                 <img src={imagen} alt={nombre} />
                 <p>{precio}</p>
                 <p>{nombre}</p>
-                <Link className="boton-agregar" to={`/producto/${nombre}`}>Agregar</Link>
+                {/* <Link  className="boton-agregar" to="/"  >Agregar</Link>    */}
+                <Link className="boton-agregar" to={`/producto/${nombre}`}>Detalle</Link>
               </div>
             );
           })}
