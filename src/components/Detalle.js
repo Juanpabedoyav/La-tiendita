@@ -29,8 +29,7 @@ function Detalle({producto, productos }) {
     setTotal(total + precio)
     getStorage()
     
-
-    // console.log(precio);
+   // console.log(precio);
 
   }
   
@@ -58,7 +57,7 @@ function Detalle({producto, productos }) {
             {datos.map(({ nombre, precio, imagen, id }) => {
                     return (
 
-                                <div  className="card" key= {id}>
+                                <div  className="card" key= {nombre + id}>
                                             
                                             <div><img src={imagen} alt="" /></div>
                                             <div>{nombre}</div>
