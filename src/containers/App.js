@@ -3,12 +3,12 @@ import Main from '../components/Main';
 import {ContenedorStyle} from '../styles/Utilidades.styles';
 import { GlobalStyle } from '../styles/Main.styles'
 
-function App() {
+function App({oferta, popular}) {
   return (
     <>
       <ContenedorStyle>
         <Hero />
-        <Main />
+        <Main oferta={oferta} popular={popular} />
         <GlobalStyle />
       </ContenedorStyle>
     </>
