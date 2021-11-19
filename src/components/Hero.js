@@ -1,9 +1,12 @@
 import React from 'react'
+import { HeroStyle, HeroTitulo } from '../styles/Hero.styles';
 
 function Hero() {
     return (
       <>
-        <h1>Hero</h1>
+        <HeroStyle>
+          <HeroTitulo>Hola soy un titulo</HeroTitulo>
+        </HeroStyle>
       </>
     );
 }
