@@ -7,4 +7,7 @@ export const NavBarStyles = styled.nav`
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  .titulo {
+    color: #0d77b8;
+  }
 `;
