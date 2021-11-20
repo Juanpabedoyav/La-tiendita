@@ -9,5 +9,6 @@ export const NavBarStyles = styled.nav`
   padding-right: 20px;
   .titulo {
     color: #0d77b8;
+    font-weight: 800px;
   }
 `;
