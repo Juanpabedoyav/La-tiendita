@@ -88,7 +88,7 @@ const Registro = () => {
       </FloatingLabel>
       <FloatingLabel controlId="floatingInput" label="Precio" className="mb-3">
         <Form.Control
-          type="email"
+          type="number"
           name="precio"
           placeholder="Precio"
           className="inputFocus input"
