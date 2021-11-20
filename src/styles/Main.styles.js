@@ -29,12 +29,15 @@ export const ProductStyle = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 15px #11476868;
+    border-radius: 5px;
     img {
       width: 100%;
     }
     .boton-agregar {
       padding: 10px 24px;
       background-color: #0d77b8;
+      
       text-decoration: none;
       color: white;
       margin-top: 10px;

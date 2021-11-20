@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const ButtonContainer = styled.div`
-
-border: 1px solid red;
 margin-top: 30px;
 display: flex;
 justify-content: space-evenly;
@@ -11,3 +9,11 @@ justify-content: space-evenly;
 }
 
 `
+
+
+export const Formulario = styled.form`
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+
+`;
