@@ -14,7 +14,7 @@ export const HeroStyle = styled.div`
   @media (min-width: 786px) {
     background-image: url("https://res.cloudinary.com/workshop-principe/image/upload/v1637333891/banner_it0xng.png");
     height: 300px;
-    width: 100vw;
+    width: 79.5vw;
   }
 `;
 export const HeroTitulo = styled.h2`
