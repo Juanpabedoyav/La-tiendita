@@ -10,6 +10,11 @@ export const ContainerCard = styled.div`
     width: 280px;
     /* border:2px solid green; */
 
+    .delete{
+      background-color: #064a76;
+      margin-left: 10px;
+    }
+
 
 
 `;
