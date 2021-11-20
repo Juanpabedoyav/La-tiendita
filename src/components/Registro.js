@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, FloatingLabel, Button } from "react-bootstrap";
-import { ButtonContainer } from "../styles/Registro.styles";
+import { ButtonContainer, Formulario } from "../styles/Registro.styles";
 
 const Registro = () => {
   const [registro, setRegistro] = useState({
@@ -69,9 +69,10 @@ const Registro = () => {
   };
 
   return (
-    <div>
+    <Formulario onSubmit={handleSubmit} >
+      
       <FloatingLabel
-        onSubmit={handleSubmit}
+        
         controlId="floatingInput"
         label="Nombre del producto"
         className="mb-3"
@@ -116,7 +117,8 @@ const Registro = () => {
           Actualizar
         </Button>
       </ButtonContainer>
-    </div>
+      
+    </Formulario >
   );
 };
 
